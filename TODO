@@ -1,0 +1,14 @@
+
+Short term
+	- randomize x for Pollards rho
+	- randomize k for shanks squares
+	- random hops for trial division
+
+	- use gnutls instead of openssl for generating moduli?
+	- automatically detect modulus bit size for moduli generating in openssl generator
+
+
+Long term
+	- Make it faster by utilizing GPU (CUDA)
+
+
