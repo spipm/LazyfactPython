@@ -13,39 +13,43 @@ This project is created for educational purposes and covers the following subjec
 	- Shanks squares
 	- Findings another semiprime with a common GCD
 
-	**Usage - building/installing**
+**Usage - building/installing**
 
+```
 $ cd src
 $ sudo python setup.py install
+```
 
-	**Usage - using**
+**Usage - using**
 
+```
 $ cd tryOut
 $ gcc generator.c -o generator -lgmp -lcrypto 
 $ ./generator > moduli.txt
 $ python lazyfactThreading.py
+```
 
-	**Sources**
+**Sources / Reading**
 
-Factoring RSA moduli (semiprime integer factorisation)
-	https://en.wikipedia.org/wiki/Integer_factorization#Factoring_algorithms
-	https://class.coursera.org/crypto-010/lecture/preview
+- Factoring RSA moduli (semiprime integer factorisation)
+	- [Integer factorisation on Wikipedia](https://en.wikipedia.org/wiki/Integer_factorization#Factoring_algorithms)
+	- [Stanford Crypto course](https://class.coursera.org/crypto-010/lecture/preview)
 
-GMP
-	https://en.wikipedia.org/wiki/GNU_Multiple_Precision_Arithmetic_Library
-	https://gmplib.org/manual/Integer-Functions.html#Integer-Functions
-OpenSSL
-	https://www.openssl.org/docs/manmaster/crypto/RSA_generate_key.html
+- GMP
+	- [GMP on Wikipedia](https://en.wikipedia.org/wiki/GNU_Multiple_Precision_Arithmetic_Library)
+	- [GMP integer functions manual](https://gmplib.org/manual/Integer-Functions.html#Integer-Functions)
+	
+- OpenSSL
+	- [OpenSSL RSA functions manual](https://www.openssl.org/docs/manmaster/crypto/RSA_generate_key.html)
 
-Python threading using Queue
-	https://docs.python.org/2/library/queue.html
-
-Creating a Python C extension and packaging
-	https://docs.python.org/2/extending/extending.html#providing-a-c-api-for-an-extension-module
-	https://docs.python.org/2/extending/building.html#building
-	https://docs.python.org/2/distutils/apiref.html#distutils.core.setup
-	For C extension/threading GIL locking:
-	http://jessenoller.com/blog/2009/02/01/python-threads-and-the-global-interpreter-lock
-
-Licensing
-	http://creativecommons.org/choose/
+- Python threading using Queue
+	- [Python Queue manual](https://docs.python.org/2/library/queue.html)
+	
+- Creating a Python C extension and packaging
+	- [Python manual - C extensions](https://docs.python.org/2/extending/extending.html#providing-a-c-api-for-an-extension-module)
+	- [Python manual - C extensions building](https://docs.python.org/2/extending/building.html#building)
+	- [Python manual - package setup](https://docs.python.org/2/distutils/apiref.html#distutils.core.setup)
+	- [Article about Python C extensions and GIL thread locking](http://jessenoller.com/blog/2009/02/01/python-threads-and-the-global-interpreter-lock)
+	
+- Licensing
+	- [Creative common license](http://creativecommons.org/choose/)
