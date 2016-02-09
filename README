@@ -1,6 +1,7 @@
-LazyFact - Factoring RSA moduli using crazy luck
-Lazyfact tries to factorise a RSA modulus using very basic methods.
+##LazyFact##
+######Factoring RSA moduli using crazy luck######
 
+Lazyfact tries to factorise a RSA modulus using very basic methods.
 This project is created for educational purposes and covers the following subjects:
 - C, GMP
 - C, OpenSSL
@@ -12,19 +13,19 @@ This project is created for educational purposes and covers the following subjec
 	- Shanks squares
 	- Findings another semiprime with a common GCD
 
-	Usage - building/installing
+	**Usage - building/installing**
 
 $ cd src
 $ sudo python setup.py install
 
-	Usage - using
+	**Usage - using**
 
 $ cd tryOut
 $ gcc generator.c -o generator -lgmp -lcrypto 
 $ ./generator > moduli.txt
 $ python lazyfactThreading.py
 
-	Sources
+	**Sources**
 
 Factoring RSA moduli (semiprime integer factorisation)
 	https://en.wikipedia.org/wiki/Integer_factorization#Factoring_algorithms
