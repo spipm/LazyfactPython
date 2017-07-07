@@ -1,5 +1,5 @@
-##LazyFact##
-######Factoring RSA moduli using crazy luck######
+## LazyFact
+###### Factoring RSA moduli using crazy luck ######
 
 Lazyfact tries to factorise a RSA modulus using very basic methods.
 This project is created for educational purposes and covers the following subjects:
